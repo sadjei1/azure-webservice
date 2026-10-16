@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/*
+User controller
+ */
 @RestController
 @RequestMapping("/v1/api")
 public class UserController {

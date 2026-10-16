@@ -17,14 +17,23 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    /*
+   User service saveUser
+    */
     public User saveUser(User user) {
         return userRepository.save(user);
     }
 
+    /*
+   User service getUser
+    */
     public Optional<User> getUser(Long id) {
         return userRepository.findById(id);
     }
 
+    /*
+    User service getAllUsers
+     */
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
